@@ -4,8 +4,8 @@ title: You're up and running!
 published: true
 ---
 
-#COMING SOON
+# COMING SOON
 
-##'The Great Migration' 
+## 'The Great Migration' 
 
-###A developers journey to move his project from using MariaDB to MongoDB
+### A developers journey to move his project from using MariaDB to MongoDB
