@@ -18,9 +18,9 @@ I personally don’t think that it’s the best way to reference a database. NoS
 &nbsp;&nbsp;&nbsp;&nbsp;
 <div align="justify">
 RDBMS have been around for decades and as you know they have a structure for storing data and require predefined schemas. RDBMS are strict, meaning that our field types must be defined ahead of time like whether a field will be an integer a string or other data type.  You don’t do that with Mongo. Data in MongoDB is stored in <strong>BSON</strong> under the hood but is represented as <strong>JSON</strong>, which is fundamentally different from an RDBMS. If you know JavaScript, then you'll be familiar with the JSON format.</div>
-&nbsp;&nbsp;
 
->Sample JSON document I inserted into one of my favorite movies “Bullitt” collections called “BullittCast”
+
+Sample JSON document I inserted into one of my favorite movies “Bullitt” collections called “BullittCast”
 
 ```
 db.BullittCast.insertOne( [
@@ -123,7 +123,7 @@ this is how MongoDB structures its data. Databases and collections are created o
 <div align="justify">
 <strong>‘find()’</strong> by the way also returns a cursor, not a list of documents. That cursor is useful for manually going through the documents. Imagine if you have hundreds and thousands of documents which would have to be transferred over the wire in one go!! That would be a heavy load on your bandwidth. You can use filters on find and on update and delete to narrow down the documents you want to find, update, or delete.</div>
 
-> Syntax:
+Syntax:
 ```
 db.collection.find( <query>, <projection> ).cursor modified
 ```
