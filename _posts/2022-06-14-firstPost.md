@@ -91,7 +91,7 @@ this is how MongoDB structures its data. Databases and collections are created o
  <br>
 <div align="justify">
 <strong>‘find()’</strong> by the way also returns a cursor, not a list of documents. That cursor is useful for manually going through the documents. Imagine if you have hundreds and thousands of documents which would have to be transferred over the wire in one go!! That would be a heavy load on your bandwidth. You can use filters on find and on update and delete to narrow down the documents you want to find, update, or delete.</div>
-
+<br>
 Syntax: 
 <p align="center"> <img width="500" height="300" src="https://i.imgur.com/SA72nbc.jpg">   
       
