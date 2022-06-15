@@ -5,7 +5,7 @@ published: true
 
 > Hello friends! Before I get on with converting an old project that ran using **MariaDB** to **MongoDB**, its imperative that I talk about MongoDB in this post, so here we go!
 
-<p  >
+<p>
 	<h2 align="center"> Introducing NoSQL MongoDB!</h2>
 </p>
 
@@ -89,11 +89,13 @@ Syntax:
 Filters and operators allow you to narrow down the set of data. We can use filters and operators to retrieve data from a collection.  As per the example above, you can see that I used the less than operator (<i>lt</i>) Now, these are special comparison operators provided by MongoDB. Some I know for sure are <i> ‘gt’</i> for Greater Than, <i>‘eq’</i> for Equal, <i>‘ne’</i> for Not Equal etc. You can find the syntax of all comparisons, logical, geospatial etc. on <a href="https://mongodb.com">mongoDB</a>. They start with a dollar sign ($), and this allows you to simply limit the amount of data you are fetching. You can also use projection to then take that data you fetched and tell MongoDB which fields you want to get and which you don't want to get. So, filters allow you to restrict the number of documents, projections then allow you to restrict the number of fields per document so to say. </div>
 <br>
 
-### Getting Started with MongoDB Atlas
-
-This [link](https://www.mongodb.com/basics/mongodb-atlas-tutorial#creating-a-mongodb-atlas-account) will take you to the literature on how to create an account with MongoDB or you can watch the first 6.30s of this [how to](https://www.youtube.com/watch?v=S4fi6Qux-4g) video to setup your account. 
-
-Video below shows a quick tour on basic set up and my effort in trying to explain using some CRUD operations. I would be doing most of the work on the shell.
+<p>
+	<h3 align="left"> Getting Started with MongoDB Atlas</h3>
+</p>
+<div align="justify">
+This <a href="https://www.mongodb.com/basics/mongodb-atlas-tutorial#creating-a-mongodb-atlas-account">link</a> will take you to the literature on how to create an account with MongoDB or you can watch the first 6.30s of this <a href="https://www.youtube.com/watch?v=S4fi6Qux-4g">'how to'</a> video to setup your account.</div> 
+<div align="justify">
+Video below shows a quick tour on basic set up and my effort in trying to explain using some CRUD operations. I would be doing most of the work on the shell.</div> 
 
 <div align="center" class="embed-responsive embed-responsive-16by9">
 <iframe width="560" height="315" src="https://www.youtube.com/embed/7PhDXhcd-aA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
@@ -103,11 +105,14 @@ Video below shows a quick tour on basic set up and my effort in trying to explai
 Now that you have a fair idea of setting up and getting started with MongoDB, be sure to look out for my next post where I will take you through the process of migrating one my 3rd semester web projects from MariaDB to MongoDB. See you on the other side. </div>
 <br>
 
-### References:
+<p>
+	<h3 align="left"> References:</h3>
+</p>
 <br>
-
-[1]		“Data Modeling w/ MongoDB,” _www.youtube.com_. https://www.youtube.com/watch?v=y0nx8LtcO4g&list=PL4RCxklHWZ9t2KI3XiRLbqsMKB_iXxScv&index=8 (accessed Jun. 15, 2022).
-
 <br>
-
-[image]		_Simplilearn.com_, 2022. https://www.simplilearn.com/ice9/free_resources_article_thumb/What_is_MongoDB.PNG (accessed Jun. 15, 2022).
+<p>
+[1]&nbsp;&nbsp;“Data Modeling w/ MongoDB,” _www.youtube.com_. https://www.youtube.com/watch?v=y0nx8LtcO4g&list=PL4RCxklHWZ9t2KI3XiRLbqsMKB_iXxScv&index=8 (accessed Jun. 15, 2022).</p>
+<br>
+<br>
+<p>
+[image]&nbsp;&nbsp;	_Simplilearn.com_, 2022. https://www.simplilearn.com/ice9/free_resources_article_thumb/What_is_MongoDB.PNG (accessed Jun. 15, 2022).</p>
