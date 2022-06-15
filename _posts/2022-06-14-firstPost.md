@@ -60,7 +60,7 @@ You can go through many videos online on how to get started with MongoDB, I mean
 MongoDB offers an excellent GUI software that you can download and connect to your localhost (data on your machine) or if you have a MongoDB instance on the cloud (data in Atlas Cluster) you can go there and get a link to connect via the compass. On compass click on New Connection and copy-paste the link in the provided box and click <i>CONNECT!</i>  Make sure you have the correct username and password in the link, and you are linking the correct database that you created. See my connection below </div>
 
 <p align="center"> <img width="500" height="300" src="https://i.imgur.com/KMkgKIy.jpg">  
-  <figcaption><center><h6>MongoDB Compass</h6></center></figcaption></p>
+  
 
 <div align="justify"> 
 Using the compass, you can pretty much do everything like creating a database, creating collections, documents, JSON fields (Key-Value Pairs). You can update and delete and basically enjoy the dynamic representation of your cluster. Watch my set up video presentation to take a deeper look at the compass GUI tool. When processing large amounts of data, MongoDB Shell's speed can suffer. Furthermore, the MongoDB Shell operates independently on the database, preventing users from independently analyzing and viewing data changes. Users using MongoDB Compass, on the other hand, may visualize their database and its changes without having to worry about performance.</div>
