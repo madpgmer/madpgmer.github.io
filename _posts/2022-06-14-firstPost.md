@@ -22,7 +22,7 @@ RDBMS have been around for decades and as you know they have a structure for sto
 
 Sample JSON document I inserted into one of my favorite movies “Bullitt” collections called “BullittCast”
 
-```
+```json
 db.BullittCast.insertOne( [
 {
 	"Id": 3,
@@ -92,19 +92,15 @@ this is how MongoDB structures its data. Databases and collections are created o
  <br>
 <div align="justify">
 <strong>‘find()’</strong> by the way also returns a cursor, not a list of documents. That cursor is useful for manually going through the documents. Imagine if you have hundreds and thousands of documents which would have to be transferred over the wire in one go!! That would be a heavy load on your bandwidth. You can use filters on find and on update and delete to narrow down the documents you want to find, update, or delete.</div>
+<br>
+Syntax: db.collection.find( <query>, <projection> ).cursor modified
+  		//Provides functionality similar to the SELECT command in SQL
+```json
+	<query> - WHERE condition,
+	<projection> - fields in result set
 
-Syntax:
-```
-db.collection.find( <query>, <projection> ).cursor modified
-```
-Provides functionality similar to the SELECT command in SQL
-```
-<query> - WHERE condition,
-<projection> - fields in result set
-```
-Example: 
-```
-const qytCursor = db.Cars.find({qty: {$lt: 10}})
+//Example: 
+	const qytCursor = db.Cars.find({qty: {$lt: 10}})
 ```
  <br>
 <div align="justify">
