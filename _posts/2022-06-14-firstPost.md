@@ -65,7 +65,7 @@ Using the compass, you can pretty much do everything like creating a database, c
 <br>
 For those who have worked with SQL will be able to understand this table below
 <br>
-<p align="center"> <img width="500" height="300" src="https://i.imgur.com/Xf8lyqy.jpg">
+<p align="center"> <img width="300" height="300" src="https://i.imgur.com/Xf8lyqy.jpg">
   
  
 <br> 
