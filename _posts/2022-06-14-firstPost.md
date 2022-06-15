@@ -65,19 +65,8 @@ Using the compass, you can pretty much do everything like creating a database, c
 <br>
 For those who have worked with SQL will be able to understand this table below
 <br>
+<p align="center"> <img width="500" height="300" src="https://i.imgur.com/lFvjOWg.jpg">
  
-| SQL | MongoDB | 
-|-------|--------|
-| Table | Collection | 
-| Row | Document |
-| Column | Field | 
-| Index | index | 
-| Joins | Embedded documents & linking | 
-| Where | $match | 
-| Group by | $group | 
-| Count() | $sum | 
-| Order by| $sort | 
-
 <br> 
 
 <div align="justify">
@@ -121,4 +110,3 @@ Now that you have a fair idea of setting up and getting started with MongoDB, be
 <br>
 
 [image]		_Simplilearn.com_, 2022. https://www.simplilearn.com/ice9/free_resources_article_thumb/What_is_MongoDB.PNG (accessed Jun. 15, 2022).
-
