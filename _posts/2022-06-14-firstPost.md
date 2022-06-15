@@ -1,5 +1,5 @@
 ---
-published: false
+published: true
 ---
 # Migrating from RDBMS to MongoDB
 
