@@ -94,16 +94,16 @@ this is how MongoDB structures its data. Databases and collections are created o
 <div align="justify">
 <strong>‘find()’</strong> by the way also returns a cursor, not a list of documents. That cursor is useful for manually going through the documents. Imagine if you have hundreds and thousands of documents which would have to be transferred over the wire in one go!! That would be a heavy load on your bandwidth. You can use filters on find and on update and delete to narrow down the documents you want to find, update, or delete.</div>
 <br>
-Syntax: db.collection.find( <query>, <projection> ).cursor modified
+Syntax: 
+		db.collection.find( <query>, <projection> ).cursor modified
   		//Provides functionality similar to the SELECT command in SQL
-```json
-	<query> - WHERE condition,
-	<projection> - fields in result set
+		<query> - WHERE condition,
+		<projection> - fields in result set
+		//Example: 
+		const qytCursor = db.Cars.find({qty: {$lt: 10}})
 
-//Example: 
-	const qytCursor = db.Cars.find({qty: {$lt: 10}})
-```
  <br>
+      
 <div align="justify">
 Filters and operators allow you to narrow down the set of data. We can use filters and operators to retrieve data from a collection.  As per the example above, you can see that I used the less than operator (<i>lt</i>) Now, these are special comparison operators provided by MongoDB. Some I know for sure are <i> ‘gt’</i> for Greater Than, <i>‘eq’</i> for Equal, <i>‘ne’</i> for Not Equal etc. You can find the syntax of all comparisons, logical, geospatial etc. on <a href="https://mongodb.com">mongoDB</a>. They start with a dollar sign ($), and this allows you to simply limit the amount of data you are fetching. You can also use projection to then take that data you fetched and tell MongoDB which fields you want to get and which you don't want to get. So, filters allow you to restrict the number of documents, projections then allow you to restrict the number of fields per document so to say. </div>
 <br>
