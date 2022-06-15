@@ -66,7 +66,7 @@ MongoDB offers an excellent GUI software that you can download and connect to yo
 Using the compass, you can pretty much do everything like creating a database, creating collections, documents, JSON fields (Key-Value Pairs). You can update and delete and basically enjoy the dynamic representation of your cluster. Watch my set up video presentation to take a deeper look at the compass GUI tool. When processing large amounts of data, MongoDB Shell's speed can suffer. Furthermore, the MongoDB Shell operates independently on the database, preventing users from independently analyzing and viewing data changes. Users using MongoDB Compass, on the other hand, may visualize their database and its changes without having to worry about performance.</div>
 
 For those who have worked with SQL will be able to understand this table below
-<div align="center">
+
   <table  style="width:100%">
   	<tr>
     	<th>SQL</th>
@@ -108,7 +108,7 @@ For those who have worked with SQL will be able to understand this table below
      	<td>Order by</td>
     	<td> $sort</td>   
   	</tr> 
-</div>   
+  
 
 <br>
 <div align="justify">
