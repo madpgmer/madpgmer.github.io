@@ -99,7 +99,7 @@ Syntax:
 Filters and operators allow you to narrow down the set of data. We can use filters and operators to retrieve data from a collection.  As per the example above, you can see that I used the less than operator (<i>lt</i>) Now, these are special comparison operators provided by MongoDB. Some I know for sure are <i> ‘gt’</i> for Greater Than, <i>‘eq’</i> for Equal, <i>‘ne’</i> for Not Equal etc. You can find the syntax of all comparisons, logical, geospatial etc. on <a href="https://mongodb.com">mongoDB</a>. They start with a dollar sign ($), and this allows you to simply limit the amount of data you are fetching. You can also use projection to then take that data you fetched and tell MongoDB which fields you want to get and which you don't want to get. So, filters allow you to restrict the number of documents, projections then allow you to restrict the number of fields per document so to say. </div>
 <br>
 
-***Getting Started with MongoDB Atlas***
+##Getting Started with MongoDB Atlas
 
 This [link](https://www.mongodb.com/basics/mongodb-atlas-tutorial#creating-a-mongodb-atlas-account) will take you to the literature on how to create an account with MongoDB or you can watch the first 6.30s of this [how to](https://www.youtube.com/watch?v=S4fi6Qux-4g) video to setup your account. 
 
@@ -113,7 +113,7 @@ Video below shows a quick tour on basic set up and my effort in trying to explai
 Now that you have a fair idea of setting up and getting started with MongoDB, be sure to look out for my next post where I will take you through the process of migrating one my 3rd semester web projects from MariaDB to MongoDB. See you on the other side. </div>
 <br>
 
-***References:***
+##References:
 <br>
 
 [1]		“Data Modeling w/ MongoDB,” _www.youtube.com_. https://www.youtube.com/watch?v=y0nx8LtcO4g&list=PL4RCxklHWZ9t2KI3XiRLbqsMKB_iXxScv&index=8 (accessed Jun. 15, 2022).
