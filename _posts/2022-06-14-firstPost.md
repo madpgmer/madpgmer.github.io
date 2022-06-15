@@ -18,8 +18,8 @@ I personally don’t think that it’s the best way to reference a database. NoS
 <div align="justify">
 RDBMS have been around for decades and as you know they have a structure for storing data and require predefined schemas. RDBMS are strict, meaning that our field types must be defined ahead of time like whether a field will be an integer a string or other data type.  You don’t do that with Mongo. Data in MongoDB is stored in <strong>BSON</strong> under the hood but is represented as <strong>JSON</strong>, which is fundamentally different from an RDBMS. If you know JavaScript, then you'll be familiar with the JSON format.</div>
 &nbsp;&nbsp;
-<div align="justify">
-Sample JSON document I inserted into one of my favorite movies “Bullitt” collections called “BullittCast”</div>
+
+> Sample JSON document I inserted into one of my favorite movies “Bullitt” collections called “BullittCast”
 
 ```
 db.BullittCast.insertOne( [
@@ -63,7 +63,7 @@ MongoDB offers an excellent GUI software that you can download and connect to yo
 <div align="justify"> 
 Using the compass, you can pretty much do everything like creating a database, creating collections, documents, JSON fields (Key-Value Pairs). You can update and delete and basically enjoy the dynamic representation of your cluster. Watch my set up video presentation to take a deeper look at the compass GUI tool. When processing large amounts of data, MongoDB Shell's speed can suffer. Furthermore, the MongoDB Shell operates independently on the database, preventing users from independently analyzing and viewing data changes. Users using MongoDB Compass, on the other hand, may visualize their database and its changes without having to worry about performance.</div>
 
-For those who have worked with SQL will be able to understand this table below
+> For those who have worked with SQL will be able to understand this table below
 <div align="center"> 
 <table style="width:100%">
   <tr>
@@ -122,7 +122,7 @@ this is how MongoDB structures its data. Databases and collections are created o
 <div align="justify">
 <strong>‘find()’</strong> by the way also returns a cursor, not a list of documents. That cursor is useful for manually going through the documents. Imagine if you have hundreds and thousands of documents which would have to be transferred over the wire in one go!! That would be a heavy load on your bandwidth. You can use filters on find and on update and delete to narrow down the documents you want to find, update, or delete.</div>
 
-Syntax:
+> Syntax:
 ```
 db.collection.find( <query>, <projection> ).cursor modified
 ```
@@ -139,7 +139,7 @@ const qytCursor = db.Cars.find({qty: {$lt: 10}})
 <div align="justify">
 Filters and operators allow you to narrow down the set of data. We can use filters and operators to retrieve data from a collection.  As per the example above, you can see that I used the less than operator (<i>lt</i>) Now, these are special comparison operators provided by MongoDB. Some I know for sure are <i> ‘gt’</i> for Greater Than, <i>‘eq’</i> for Equal, <i>‘ne’</i> for Not Equal etc. You can find the syntax of all comparisons, logical, geospatial etc. on <a href="https://mongodb.com">mongoDB</a>. They start with a dollar sign ($), and this allows you to simply limit the amount of data you are fetching. You can also use projection to then take that data you fetched and tell MongoDB which fields you want to get and which you don't want to get. So, filters allow you to restrict the number of documents, projections then allow you to restrict the number of fields per document so to say. </div>
 
-***Getting Started with MongoDB Atlas***
+> ***Getting Started with MongoDB Atlas***
 
 This [link](https://www.mongodb.com/basics/mongodb-atlas-tutorial#creating-a-mongodb-atlas-account) will take you to the literature on how to create an account with MongoDB or you can watch the first 6.30s of this [how to](https://www.youtube.com/watch?v=S4fi6Qux-4g) video to setup your account. 
 
