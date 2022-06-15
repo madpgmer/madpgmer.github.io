@@ -3,7 +3,7 @@ published: true
 ---
 # Migrating from RDBMS to MongoDB
 
-> Hello friends! Before I get on with converting an old project that ran using **MariaDB** to **MongoDB**, its imperative that I talk about MongoDB in this post, so here we go!
+> Hello friends! Before I get on with converting an old project that ran using **MariaDB** to **MongoDB**, its imperative that I talk about MongoDB in this first post, so here we go!
 
 <p>
 	<h2 align="center"> Introducing NoSQL MongoDB!</h2>
