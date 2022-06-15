@@ -123,7 +123,9 @@ Video below shows a quick tour on basic set up and my effort in trying to explai
 <div align="justify">
 Now that you have a fair idea of setting up and getting started with MongoDB, be sure to look out for my next post where I will take you through the process of migrating one my 3rd semester web projects from MariaDB to MongoDB. See you on the other side. </div>
 
-***References:***
+>***References:***
+
 [1]		“Data Modeling w/ MongoDB,” _www.youtube.com_. https://www.youtube.com/watch?v=y0nx8LtcO4g&list=PL4RCxklHWZ9t2KI3XiRLbqsMKB_iXxScv&index=8 (accessed Jun. 15, 2022).
 
 [image]		_Simplilearn.com_, 2022. https://www.simplilearn.com/ice9/free_resources_article_thumb/What_is_MongoDB.PNG (accessed Jun. 15, 2022).
+
