@@ -12,14 +12,15 @@ Hello friends! Before I get on with converting an old project that ran using **M
 After learning and implementing to use an SQL database in my previous semesters, I have always wondered about ‘NoSQL’ databases. Databases like _Cassandra_, _Neo4j_, _MongoDB_ are _NoSQL!_ Does it mean they don’t use SQL?
 <div align="justify">
 I personally don’t think that it’s the best way to reference a database. NoSQL doesn’t mean ‘No’SQL but rather ‘<strong>N</strong>ot ‘<strong>O</strong>nly’ ‘<strong>SQL</strong> All these databases I have mentioned above use SQL. These DB’s are also sometime referred to as a ‘Non-Relational Database’ and again I think that’s not a good way to reference it because for example in MongoDB you can store relational data except its stored differently compared to in a RDBMS.  Unlike <i>Cassandra</i> and <i>Neo4J</i> that are Column-based and Graph-based, MongoDB is a document-based database. It’s written in C++ and supports many APIs like JavaScript, Python, Ruby, Perl, Java etc. Now that my final project is using MERN stack for development, I have taken up the mantle to learn and deploy our database using MongoDB.</div>
+
 <pre><a href="https://www.simplilearn.com/ice9/free_resources_article_thumb/What_is_MongoDB.PNG"> <img align="left" width="320" height="300" src="https://i.imgur.com/Skf7asI.png"></a>
-</pre> <div align="justify"> &nbsp;&nbsp;When MongoDB first came out in 2009, it was exceedingly &nbsp;&nbsp;popular with many web developers because of its ease of &nbsp;&nbsp;use. It allowed web developers to work with data in the  &nbsp;&nbsp;same  format that they were using in their applications i.e., &nbsp;&nbsp; &nbsp;&nbsp;documents! But not only that, developers could work with  &nbsp;&nbsp;their data seamlessly while writing code because of Mongo &nbsp;DB's native drivers that make data appear like native &nbsp;&nbsp;objects in the programming language that is being used.</div>
+</pre> <div align="justify"> &nbsp;When MongoDB first came out in 2009, it was exceedingly &nbsp;&nbsp;popular with many web developers because of its ease of &nbsp;&nbsp;use. It allowed web developers to work with data in the  &nbsp;&nbsp;same  format that they were using in their applications i.e., &nbsp;&nbsp; &nbsp;documents! But not only that, developers could work with  &nbsp;&nbsp;their data seamlessly while writing code because of Mongo &nbsp;DB's native drivers that make data appear like native &nbsp;&nbsp;objects in the programming language that is being used.</div>
 &nbsp;&nbsp;&nbsp;&nbsp;
 <div align="justify">
 RDBMS have been around for decades and as you know they have a structure for storing data and require predefined schemas. RDBMS are strict, meaning that our field types must be defined ahead of time like whether a field will be an integer a string or other data type.  You don’t do that with Mongo. Data in MongoDB is stored in <strong>BSON</strong> under the hood but is represented as <strong>JSON</strong>, which is fundamentally different from an RDBMS. If you know JavaScript, then you'll be familiar with the JSON format.</div>
 &nbsp;&nbsp;
 
-> Sample JSON document I inserted into one of my favorite movies “Bullitt” collections called “BullittCast”
+>Sample JSON document I inserted into one of my favorite movies “Bullitt” collections called “BullittCast”
 
 ```
 db.BullittCast.insertOne( [
@@ -58,57 +59,57 @@ You can go through many videos online on how to get started with MongoDB, I mean
 <div align="justify"> 
 MongoDB offers an excellent GUI software that you can download and connect to your localhost (data on your machine) or if you have a MongoDB instance on the cloud (data in Atlas Cluster) you can go there and get a link to connect via the compass. On compass click on New Connection and copy-paste the link in the provided box and click <i>CONNECT!</i>  Make sure you have the correct username and password in the link, and you are linking the correct database that you created. See my connection below </div>
 
-<p align="center"> <img width="500" height="300" src="https://i.imgur.com/KMkgKIy.jpg"> </p> <figcaption><center><h6> MongoDB Compass<h6></center></figcaption>
+<p align="center"> <img width="500" height="300" src="https://i.imgur.com/KMkgKIy.jpg">  
+  <figcaption><center><h6>MongoDB Compass</h6></center></figcaption></p>
 
 <div align="justify"> 
 Using the compass, you can pretty much do everything like creating a database, creating collections, documents, JSON fields (Key-Value Pairs). You can update and delete and basically enjoy the dynamic representation of your cluster. Watch my set up video presentation to take a deeper look at the compass GUI tool. When processing large amounts of data, MongoDB Shell's speed can suffer. Furthermore, the MongoDB Shell operates independently on the database, preventing users from independently analyzing and viewing data changes. Users using MongoDB Compass, on the other hand, may visualize their database and its changes without having to worry about performance.</div>
 
-> For those who have worked with SQL will be able to understand this table below
-<div align="center"> 
-<table style="width:100%">
-  <tr>
-    <th>SQL</th>
-    <th>MongoDB</th>   
-  </tr>
-  <tr>
-    <td>Table </td>
-    <td>Collection </td>
-  </tr>
-  <tr>
-     <td>Row</td>
-    <td>Document</td>   
-  </tr>
-  <tr>
-     <td> Column</td>
-    <td> Field</td>   
-  </tr>
-  <tr>
-     <td>Index</td>
-    <td> index</td>   
-  </tr>
-  <tr>
-     <td> Joins</td>
-    <td> Embedded documents & linking</td>   
-  </tr>
-  <tr>
-     <td> Where</td>
-    <td> $match</td>   
-  </tr>
-  <tr>
-     <td> Group by</td>
-    <td> $group</td>   
-  </tr>
-  <tr>
-     <td> Count()</td>
-    <td> $sum</td>   
-  </tr>
-  <tr>
-     <td>Order by</td>
-    <td> $sort</td>   
-  </tr>  
-</div>
+For those who have worked with SQL will be able to understand this table below
+<div align="center">
+  <table  style="width:100%">
+  	<tr>
+    	<th>SQL</th>
+    	<th>MongoDB</th>   
+  	</tr>
+  	<tr>
+    	<td>Table </td>
+    	<td>Collection </td>
+  	</tr>
+ 	<tr>
+     	<td>Row</td>
+    	<td>Document</td>   
+  	</tr>
+  	<tr>
+     	<td> Column</td>
+    	<td> Field</td>   
+ 	 </tr>
+ 	 <tr>
+     	<td>Index</td>
+    	<td> index</td>   
+  	</tr>
+  	<tr>
+     	<td> Joins</td>
+    	<td> Embedded documents & linking</td>   
+  	</tr>
+ 	 <tr>
+     	<td> Where</td>
+    	<td> $match</td>   
+  	</tr>
+  	<tr>
+     	<td> Group by</td>
+    	<td> $group</td>   
+  	</tr>
+  	<tr>
+     	<td> Count()</td>
+    	<td> $sum</td>   
+  	</tr>
+  	<tr>
+     	<td>Order by</td>
+    	<td> $sort</td>   
+  	</tr> 
+</div>   
 
-<div align="justify"> </div>
 <br>
 <div align="justify">
 MongoDB database holds multiple collections, and each collection can then hold multiple documents,
@@ -139,7 +140,7 @@ const qytCursor = db.Cars.find({qty: {$lt: 10}})
 <div align="justify">
 Filters and operators allow you to narrow down the set of data. We can use filters and operators to retrieve data from a collection.  As per the example above, you can see that I used the less than operator (<i>lt</i>) Now, these are special comparison operators provided by MongoDB. Some I know for sure are <i> ‘gt’</i> for Greater Than, <i>‘eq’</i> for Equal, <i>‘ne’</i> for Not Equal etc. You can find the syntax of all comparisons, logical, geospatial etc. on <a href="https://mongodb.com">mongoDB</a>. They start with a dollar sign ($), and this allows you to simply limit the amount of data you are fetching. You can also use projection to then take that data you fetched and tell MongoDB which fields you want to get and which you don't want to get. So, filters allow you to restrict the number of documents, projections then allow you to restrict the number of fields per document so to say. </div>
 
-> ***Getting Started with MongoDB Atlas***
+***Getting Started with MongoDB Atlas***
 
 This [link](https://www.mongodb.com/basics/mongodb-atlas-tutorial#creating-a-mongodb-atlas-account) will take you to the literature on how to create an account with MongoDB or you can watch the first 6.30s of this [how to](https://www.youtube.com/watch?v=S4fi6Qux-4g) video to setup your account. 
 
