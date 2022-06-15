@@ -23,21 +23,21 @@ RDBMS have been around for decades and as you know they have a structure for sto
 Sample JSON document I inserted into one of my favorite movies “Bullitt” collections called “BullittCast”
 
 ```json
-{
-	"Id": 3,
-	"Fname": "Steve",
-	"Lname": "McQueen",
-	"Email": "steve_mcqueen@gmail.com",
-	"Address": {
-	"Street": "29 Oakmont Dr",
-	"City": "Los Angeles",
-	"State": "CA",
-	"Zip_Code": "90049"
-	"PhoneNumbers": [
-		{ "type": "home", "number": "310*******" },
-		{ "type": "mobile", "number": "310*******" }
-		]
-} 
+	{
+		"Id": 3,
+		"Fname": "Steve",
+		"Lname": "McQueen",
+		"Email": "steve_mcqueen@gmail.com",
+		"Address": {
+		"Street": "29 Oakmont Dr",
+		"City": "Los Angeles",
+		"State": "CA",
+		"Zip_Code": "90049"
+		"PhoneNumbers": [
+			{ "type": "home", "number": "310*******" },
+			{ "type": "mobile", "number": "310*******" }
+			]
+	} 
 ```
 <div align="justify"> 
 MongoDB requires less management and has simpler data models, unlike an RDBMS which requires a highly trained expert to monitor the database. While learning Oracle in my previous semesters I used to get annoyed with constraints of data volumes and capacity limitations so I’m hoping that the NoSQL database would allow me to avoid those issues and cut the drama that follows. I have also read that RDBMS scales up! What that means is bigger load, bigger server whereas NoSQL scale-out. They distribute data across multiple hosts seamlessly. No wonder many organizations with large volumes of data are thinking of migrating from RDBMS to a NoSQL database </div>
