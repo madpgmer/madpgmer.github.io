@@ -67,50 +67,20 @@ Using the compass, you can pretty much do everything like creating a database, c
 
 For those who have worked with SQL will be able to understand this table below
 
-  <table  style="width:100%">
-  	<tr>
-    	<th>SQL</th>
-    	<th>MongoDB</th>   
-  	</tr>
-  	<tr>
-    	<td>Table </td>
-    	<td>Collection </td>
-  	</tr>
- 	<tr>
-     	<td>Row</td>
-    	<td>Document</td>   
-  	</tr>
-  	<tr>
-     	<td> Column</td>
-    	<td> Field</td>   
- 	 </tr>
- 	 <tr>
-     	<td>Index</td>
-    	<td> index</td>   
-  	</tr>
-  	<tr>
-     	<td> Joins</td>
-    	<td> Embedded documents & linking</td>   
-  	</tr>
- 	 <tr>
-     	<td> Where</td>
-    	<td> $match</td>   
-  	</tr>
-  	<tr>
-     	<td> Group by</td>
-    	<td> $group</td>   
-  	</tr>
-  	<tr>
-     	<td> Count()</td>
-    	<td> $sum</td>   
-  	</tr>
-  	<tr>
-     	<td>Order by</td>
-    	<td> $sort</td>   
-  	</tr> 
+ 
+|SQL                         |MongoDB                       |
+|-------------------------------|-----------------------------|
+|`Table`            |`Collection`         |
+|`Row`            |`Document`            |
+|`Column`|`Field`|
+|`Index`|`index`|
+|`Joins`|`Embedded documents & linking`|
+|`Where`|`$match`|
+|`Group by`|`$group`|
+|`Count()`|`$sum`|
+|`Order by`|`$sort`|
   
 
-<br>
 <div align="justify">
 MongoDB database holds multiple collections, and each collection can then hold multiple documents,
 this is how MongoDB structures its data. Databases and collections are created only when a document is inserted, only when you need a specific database or collection. A document can't directly be inserted into a database, it's always part of a collection, so keep that layered architecture in mind when you create your DB. Documents have a certain structure i.e... each document needs a unique ID which must be called _id, MongoDB creates this by default, or you can set this on your own. Then you can have embedded documents as well as arrays, texts, numbers, and all other data types that you mostly know if you have experience working with SQL.
